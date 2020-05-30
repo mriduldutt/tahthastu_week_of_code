@@ -1,0 +1,4 @@
+str="mridul"
+strlen=len(str)
+reverse=str[strlen::-1]
+print(reverse)
