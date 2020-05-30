@@ -1,0 +1,16 @@
+def perm(list,Str=""):
+    Set = set(list)
+    strlist = []
+    if len(Set)==1:
+        Str += "".join(list)
+        return list([Str])
+    for x in Set:
+       list1 = list(list)
+        S = Str + x
+        list1.remove(x)
+        strlist.extend(per(list1, S))
+    return strlist
+
+str = input("Enter String:-")
+list = perm(list(str))
+print("All Permutation of given string is:-" + ", ".join(list))
