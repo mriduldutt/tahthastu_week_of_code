@@ -1,4 +1,0 @@
-str="mridul"
-strlen=len(str)
-rev=str[strlen::-1]
-print(rev)
